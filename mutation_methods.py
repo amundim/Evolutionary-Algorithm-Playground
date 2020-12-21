@@ -1,18 +1,20 @@
 import numpy as np
 import random
 
-def single_point_a_mutation_method(aux_pop_input, mutation_probability_input, seed_input):
-    
-    # Diferentemente da single_point_mutation, essa abordagem "passeia" por todos os indivíduos
-    
-    # Para cada bit de cada indivíduo (1)
-    # Gera número aleatório entre 0 e 1 (2)
-    # Se número aleatório for menor ou igual à probabilidade de mutação (3)
-    # Inverte bit (4)
-    # Insere indivíduo na população (5)
 
+def single_point_a_mutation_method(aux_pop_input, mutation_probability_input, seed_input):
+    """
+    This approach runs through every individual.
+    It evaluates every bit of the individual and inverts it if a random generated number is larger the mutation probability (previously set by the user). This approach allows multiple mutations per individual;
+
+    For each bit of every individual (1)
+    Generates a random number between 0 and 1 (2)
+    If the random number is lower or equal to the mutation probability (3)
+    Inverts bit (4)
+    Add the individual to the population (5)
+    """
     random.seed(seed_input)
-    
+
     # (1)
     i = 0
     while i < len(aux_pop_input):
@@ -22,18 +24,22 @@ def single_point_a_mutation_method(aux_pop_input, mutation_probability_input, se
             if random.uniform(0, 1) <= mutation_probability_input:
                 # (4) e (5)
                 aux_pop_input[i][b] = int(not(aux_pop_input[i][b]))
-            
+
             b = b + 1
         i = i + 1
 
     return aux_pop_input
 
+
 def single_point_b_mutation_method(aux_pop_input, mutation_probability_input, seed_input):
-    # Seleciona quantidade de indivíduos igual à probabilidade de mutação (1)
-    # Seleciona bit aleatório de variável aleatória (2)
-    # Inverte bit (3)
-    # Insere indivíduo na população (4)
-    
+    """
+    In this approach, the number of individuals is the size of the population multiplied by the mutation probability.
+    The individuals are selected (1)
+    A random generated bit position is selected (2)
+    Inverts bit (3)
+    Add the individual to the population (4)
+    """
+
     random.seed(seed_input)
 
     # (1)
@@ -60,5 +66,5 @@ def single_point_b_mutation_method(aux_pop_input, mutation_probability_input, se
         aux_pop_input[random_individual_idx][random_bit_position] = new_bit
 
         n_mutations = n_mutations + 1
-        
+
     return aux_pop_input
