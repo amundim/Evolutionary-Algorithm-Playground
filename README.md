@@ -8,7 +8,7 @@ The Genetic Algorithm performs the following procedure:
   A new population is randomly built. Beyond the number of representation bits, it also considers the number of individuals and the dimension of the problem (both set by the user).
   The population is evaluated by the test function and the selection, crossover, mutation and elitism procedures are executed. This is iteratively repeated, until the number of generations is reached.
   
-  In the Evolutionary Algorithm Playground, the following methods are implemented:\
+  In the Evolutionary Algorithm Playground, the following methods are implemented:
   
    Selection:\
       - Roulette;\
