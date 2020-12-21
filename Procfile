@@ -1,1 +1,1 @@
-web: streamlit evo_playground.py
+web: streamlit run --server.enableCORS false --server.port $PORT evo_playground.py
