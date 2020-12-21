@@ -1,5 +1,0 @@
-streamlit
-numpy
-random
-math
-json
