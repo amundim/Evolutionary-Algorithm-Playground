@@ -1,0 +1,146 @@
+{
+   "Ackley":[
+      {
+         "max_variables":30,
+         "interval_min":-30,
+         "interval_max":30,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = -20exp(-0.2(1/n\\sum_{i=1}^{n} x_i^2)^{1/2})-exp(1/n\\sum_{i=1}^{n} cos(2\\pi x_i)) + 20 + \\epsilon"
+      }
+],
+"Bohachevsky":[
+      {
+         "max_variables":10,
+         "interval_min":-5.12,
+         "interval_max":5.12,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n-1} (x_i^2 + 2x_{i+1}^2 - 0.3cos(3\\pi x_i) - 0.4cos(4\\pi x_{i+1}) + 0.7)"
+      }
+],
+"De Jong Step - A":[
+      {
+         "max_variables":5,
+         "interval_min":-5.12,
+         "interval_max":5.12,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n} integer(x_i)"
+      }
+],
+"De Jong Step - B":[
+      {
+         "max_variables":30,
+         "interval_min":-1.28,
+         "interval_max":1.28,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n} ix_i^4 + Gauss(0, 1)"
+      }
+],
+"Griewangk":[
+      {
+         "max_variables":10,
+         "interval_min":-600,
+         "interval_max":600,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = 1 + \\sum_{i=1}^{n} \\frac{x_i^2}{4000} - \\prod_{i=1}^{n} cos(x_i/\\sqrt i)"
+      }
+],
+
+"Rastrigin":[
+      {
+         "max_variables":20,
+         "interval_min":-5.12,
+         "interval_max":5.12,
+         "optimal":0,
+         "arguments":1,
+	 "optimization_type":"min",
+         "latex":"f(x) = 10n + \\sum_{i=1}^{n} (x_i^2 -10cos(2\\pi x_i))"
+      }
+],
+"Rosenbrock":[
+      {
+         "max_variables":10,
+         "interval_min":-5.12,
+         "interval_max":5.12,
+         "optimal":0,
+         "arguments":1,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n-1} [100(x_i^2 - x_{i+1})^2 + (1-x_i)^2]"
+      }
+],
+"Schaffer":[
+      {
+         "max_variables":2,
+         "interval_min":-100,
+         "interval_max":100,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = (x_1^2 + x_2^2)^{0.25}[sin^2(50(x_{1}^2 + x_{2}^2)^{0.1}) + 1.0]"
+      }
+],
+"Schwefel - A":[
+      {
+         "max_variables":30,
+         "interval_min":-30,
+         "interval_max":30,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n} (x_i + 0.5)^2"
+      }
+],
+"Schwefel - B":[
+      {
+         "max_variables":10,
+         "interval_min":-500,
+         "interval_max":500,
+         "optimal":"-418.98288_n_ being _n_ the number of variables",
+         "arguments":420.9687,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n} - x_i(\\sqrt|i|)"
+      }
+],
+"Schwefel's Pro 1.2":[
+      {
+         "max_variables":20,
+         "interval_min":-30,
+         "interval_max":30,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n}(\\sum_{j=1}^{i}x_j)^2"
+      }
+],
+"Sphere":[
+      {
+         "max_variables":30,
+         "interval_min":-30,
+         "interval_max":30,
+         "optimal":0,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = \\sum_{i=1}^{n} x_i^2"
+      }
+   ],
+"Untitled":[
+      {
+         "max_variables":2,
+         "interval_min":-10,
+         "interval_max":10,
+         "optimal":1,
+         "arguments":0,
+	 "optimization_type":"min",
+         "latex":"f(x) = (x_1^2 + x_2^2)/2 - cos(20\\pi x_1)cos(20\\pi x_2) + 2"
+      }
+    ]
+}
