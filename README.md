@@ -13,10 +13,10 @@ The Genetic Algorithm performs the following procedure:
    Selection:\
       - Roulette;\
       - Log Roulette: in this approach, the roulette probabilities are processed by a log function. It reduces the difference between individual's scores, enabling higher  diversity to the population.\
-      - Tournament;\
+      - Tournament;
      
    Crossover:\
-      - Single Point;\
+      - Single Point;
       
    Mutation:\
       - Single Point A: this approach runs through every individual. It evaluates every bit of the individual and inverts it if a random generated number is larger the mutation probability (previously set by the user). This approach allows multiple mutations per individual;\
