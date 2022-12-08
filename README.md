@@ -31,3 +31,5 @@ The Particle Swarm Algorithm performs the following procedure:
   A population is build within the search interval (set by the user). Differently from the Genetic Algorithm, the population is countinuos. It also considers the number of individuals and the dimension of the problem (both set by the user).\
   The individuals of the swarm-like population will be individually evaluated through the test function. After the evaluation, they will move according to the cognitive and social speeds. The speed is also influenced by a inertia weight (set by the user), which normally decreases through the evolutionary process. The cognitive speed is influenced by the Self Trust Parameter and the social speed is influenced by the Social Trust Parameter.\
   This is iteratively repeated, until the number of generations is reached.
+
+https://evolutionary-algorithm-playground.streamlit.app/
